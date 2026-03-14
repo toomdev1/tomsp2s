@@ -3,22 +3,24 @@
 <head>
 <title>Tom's P2S Printer Cam</title>
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background: black;
-  overflow: hidden;
+  margin:0;
+  padding:0;
+  height:100%;
+  background:black;
+  overflow:hidden;
 }
 
-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+#player {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  border:none;
 }
 </style>
 
@@ -27,7 +29,9 @@ iframe {
 <body>
 
 <iframe
+id="player"
 src="https://player.twitch.tv/?channel=tomsp2s&parent=toomdev1.github.io&autoplay=true&muted=true"
+allow="autoplay; fullscreen"
 allowfullscreen>
 </iframe>
 
